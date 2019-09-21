@@ -14,7 +14,6 @@ export class ServerComponent {
   serverId: number = 10;
   serverStatus: string = 'offline';
 
-
   constructor() {
     this.serverStatus = Math.random() > .5 ? this.STATUS_OFFLINE : this.STATUS_ONLINE;
   }
