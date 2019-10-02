@@ -20,6 +20,10 @@ export class RecipeService {
 
   }
 
+  getRecipie(id: number) {
+    return this.recipes[id];
+  }
+
   getRecipies() {
     return this.recipes.slice();
   }
