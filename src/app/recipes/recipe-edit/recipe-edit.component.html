@@ -38,7 +38,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12" formArrayName="ingredients">
-          <div class="form-group" *ngFor="let ingControl of getControls(); let i = index" [formGroupName]="i">
+          <div class="form-group" *ngFor="let ingControl of getControls(); let i = index" [formGroupName]="i" style="margin-bottom: 10px">
             <div class="col-xs-8">
               <input type="text" class="form-control" formControlName="name">
             </div>
@@ -46,6 +46,11 @@
               <input type="number" class="form-control" formControlName="amount">
             </div>
             <div class="col-xs-2"><button class="btn btn-danger">X</button></div>
+            <div class="clearfix"></div>
+          </div>
+          <hr />
+          <div class="col-xs-12">
+            <button class="btn btn-success" type="button" (click)="onAddIngredient()">Add Ingredient</button>
           </div>
         </div>
       </div>
